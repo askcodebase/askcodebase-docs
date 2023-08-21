@@ -1,5 +1,6 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
+import { useRouter } from 'next/router'
 
 const config: DocsThemeConfig = {
   logo: (<span className='text-lg font-bold flex align-center items-center'>
@@ -17,6 +18,15 @@ const config: DocsThemeConfig = {
         </g>
       </svg>
     )
+  },
+  useNextSeoProps() {
+    const { asPath } = useRouter()
+    if (asPath !== '/') {
+      return {
+        titleTemplate: '%s | AskCodebase Docs',
+      }
+    }
+    return {titleTemplate: 'AskCodebase Docs'}
   },
   project: {
     link: 'https://github.com/jipitiai/askcodebase-docs'

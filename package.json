@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shuding/nextra-docs-template.git"
+    "url": "git+https://github.com/jipitiai/askcodebase-docs"
   },
   "author": "AskCodebase <hello@askcodebase.com>",
   "license": "MIT",

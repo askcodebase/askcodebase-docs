@@ -1,4 +1,8 @@
-# OpenQuickJS Docs
+# AskCodebase Docs
+
+AskCodebase is your AI programming autopilot.
+
+See: https://askcodebase.com for the details.
 
 ## Develop
 
@@ -6,6 +10,3 @@
 pnpm i # install dependencies
 pnpm dev # start dev server
 ```
-## Thanks
-
-This website is hosted with [nextra](https://nextra.site/docs) on [vercel](https://vercel.com/).

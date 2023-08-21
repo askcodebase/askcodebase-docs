@@ -10,3 +10,7 @@
 img {
   border-radius: 3px;
 }
+
+.single-line.nextra-cards {
+  grid-template-columns: none;
+}

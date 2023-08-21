@@ -1,17 +1,19 @@
 {
-  "name": "nextra-docs-template",
+  "name": "askcodebase-docs",
   "version": "0.0.1",
-  "description": "Nextra docs template",
+  "description": "AskCodebase Docs",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "cf:build": "npx @askcodebase/next-on-pages",
+    "cf:github:publish": "CLOUDFLARE_ACCOUNT_ID=$CLOUDFLARE_ACCOUNT_ID CLOUDFLARE_API_TOKEN=$CLOUDFLARE_API_TOKEN && wrangler pages deploy --project-name askcodebase-docs .vercel/output/static"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shuding/nextra-docs-template.git"
   },
-  "author": "Shu Ding <g@shud.in>",
+  "author": "AskCodebase <hello@askcodebase.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/shuding/nextra-docs-template/issues"
@@ -26,10 +28,12 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@askcodebase/next-on-pages": "^0.1.0",
     "@types/node": "18.11.10",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.24",
     "tailwindcss": "^3.3.2",
-    "typescript": "^4.9.3"
+    "typescript": "^4.9.3",
+    "wrangler": "^3.5.1"
   }
 }

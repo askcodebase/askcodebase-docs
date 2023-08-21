@@ -16,6 +16,14 @@ const config: DocsThemeConfig = {
         content='Your AI programming autopilot.'
       />
       <title>AskCodebase Docs</title>
+      <script type='application/ld+json'>
+          {`{
+            "@context": "https://schema.org",
+            "@type" : "WebSite",
+            "name" : "AskCodebase Docs",
+            "url" : "https://docs.askcodebase.com"
+          }`}
+      </script>
       <link rel='icon' type='image/png' href='/favicon.svg' />
     </>
   ),

@@ -49,7 +49,7 @@ const config: DocsThemeConfig = {
             "url" : "https://docs.askcodebase.com"
           }`}
       </script>
-      <link rel='icon' type='image/png' href='/favicon.svg' />
+      <link rel='icon' href='/favicon.ico' />
     </>
   ),
   footer: {
